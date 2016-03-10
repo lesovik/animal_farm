@@ -1,3 +1,34 @@
+This is a standalone app.
+
+Its highly configurable - see config/config.php where you can change size of the herds, the range of generated numbers etc.
+
+
+
+Save it, point apache to the root, make sure that /data is writeable and run the file.
+
+I've tried to create OOD app using best practices, naming conventions, namespaces, single responsibility and dependency injections.
+
+The Sheep and Goat classes do not have any specific functionality, thus they are just empty concrete extensions of abstract Animal class
+
+The app is testable, and PHP unit is configured. If you have PHPUnit installed, do the following:
+
+cd test
+php unit
+
+I did not have much time to write many tests but 2 test files are there, testing Goat and Sheep class.
+But all classes designed to be testable.
+
+### Hurdles
+
+Creating a testable interface with proper namespacing was a bit of a challenge without any framework.
+
+AnimalFarm::displayInfo() can use a bit more refactoring, where math logic should be moved to a static utility class
+
+
+
+
+
+
 Challenge:
 
 Your goal is to generate a PHP script that utilizes an object oriented approach to do the
