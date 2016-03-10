@@ -4,7 +4,7 @@ Its highly configurable - see config/config.php where you can change size of the
 
 
 
-Save it, point apache to the root, make sure that /data is writeable and run the file.
+Save it, point apache to the root, make sure that /data is writeable and hit the root via browser.
 
 I've tried to create OOD app using best practices, naming conventions, namespaces, single responsibility and dependency injections.
 
